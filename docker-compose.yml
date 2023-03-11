@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  mongo:
+    image: mongo
+    container_name: my-mongo-shop
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./data:/data/db
